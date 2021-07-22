@@ -1,7 +1,9 @@
-// compile: make
-// output: ./main > image.ppm
-// clean up: make clean
-
+/**
+ * Usage:
+ * compile: make
+ * render: make render
+ * clean up: make clean
+**/
 #include "color.h"
 #include <iostream>
 

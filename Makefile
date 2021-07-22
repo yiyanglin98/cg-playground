@@ -18,5 +18,8 @@ $(EXENAME) : output_msg $(OBJS)
 main.o : main.cpp color.h vec3.h
 	$(CXX) $(CXXFLAGS) main.cpp
 
+render : main
+	./main > image.ppm
+
 clean :
 	-rm -f *.o $(EXENAME) *.ppm
