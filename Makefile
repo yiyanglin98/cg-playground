@@ -15,7 +15,7 @@ output_msg: ; $(CLANG_VERSION_MSG)
 $(EXENAME) : output_msg $(OBJS)
 	$(LD) $(OBJS) $(LDFLAGS) -o $(EXENAME)
 
-main.o : main.cpp color.h common.h sphere.h hittable_list.h
+main.o : main.cpp color.h common.h sphere.h hittable_list.h camera.h
 	$(CXX) $(CXXFLAGS) main.cpp
 
 render : main
